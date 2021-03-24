@@ -62,3 +62,6 @@ function Person(name, city, age) {
   //age property
   this.age = age;
 }
+//create sayHello function for Person
+Person.prototype.sayHello = () =>
+  console.log(`Hey! My name is ${name}, I am ${age}, and live in ${city}`);
