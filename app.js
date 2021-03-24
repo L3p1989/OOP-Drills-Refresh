@@ -125,3 +125,17 @@ aunt1.sayHello();
 aunt2.sayHello();
 //call aunt3 sayHello func
 aunt3.sayHello();
+//console log separator
+console.log("Start of Inheritance");
+//assign Vehicle as new class
+class Vehicle {
+  constructor(manufacturer, wheels) {
+    this.manufacturer = manufacturer;
+    this.wheels = wheels;
+  }
+  aboutVehicle() {
+    console.log(
+      `This is a vehicle, it is made by ${this.manufacturer}, and it has ${this.wheels} wheels.`
+    );
+  }
+}
