@@ -71,7 +71,7 @@ Person.prototype.sayHello = function () {
 //assign friend1 as new Person
 const friend1 = new Person("Noreen", "Chandler", 50);
 //assign friend2 as new Person
-const friend2 = new Person("Shannon", "Denver", 36);
+const friend2 = new Person("Shannon", "Aurora", 36);
 //assign friend3 as new Person
 const friend3 = new Person("Anne", "Parker", 45);
 //assign friend4 as new Person
@@ -101,3 +101,13 @@ class People {
     );
   }
 }
+//assign mom as new People
+const mom = new People("Noreen", "Chandler", 50);
+//assign sibling as new People
+const sibling = new People("Shannon", "Aurora", 36);
+//assign aunt1 as new People
+const aunt1 = new People("Anne", "Parker", 45);
+//assign aunt2 as new People
+const aunt2 = new People("Mickey", "Bailey", 48);
+//assign aunt3 as new People
+const aunt3 = new People("Laura", "Laura", 52);
