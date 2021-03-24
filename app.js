@@ -158,3 +158,23 @@ class Truck extends Vehicle {
     );
   }
 }
+//assign Sedan as a new class that uses Vehicle as a parent
+class Sedan extends Vehicle {
+  constructor(manufacturer, wheels, doors, size, mpg) {
+    super(manufacturer, wheels);
+    this.doors = doors;
+    this.size = size;
+    this.mpg = mpg;
+  }
+  aboutVehicle() {
+    console.log(
+      `This is a ${
+        this.size
+      } sized ${this.constructor.name.toLowerCase()}, it is made by ${
+        this.manufacturer
+      }, has ${this.wheels} wheels, ${this.doors} doors, and gets ${
+        this.mpg
+      } miles per gallon.`
+    );
+  }
+}
