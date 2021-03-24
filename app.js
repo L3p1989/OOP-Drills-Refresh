@@ -53,6 +53,8 @@ person3.sayHello();
 person4.sayHello();
 //call person5 sayHello function
 person5.sayHello();
+//console log to separate section
+console.log("End of Object Literals");
 //assign Person as Pseudo Class with 3 constructors
 function Person(name, city, age) {
   //name property
@@ -88,6 +90,8 @@ friend3.sayHello();
 friend4.sayHello();
 //call friend5 sayHello function
 friend5.sayHello();
+///console log to separate section
+console.log("end of Pseudo Classes");
 //assign People as new class
 class People {
   constructor(name, city, age) {
@@ -111,3 +115,13 @@ const aunt1 = new People("Anne", "Parker", 45);
 const aunt2 = new People("Mickey", "Bailey", 48);
 //assign aunt3 as new People
 const aunt3 = new People("Laura", "Laura", 52);
+//call mom sayHello func
+mom.sayHello();
+//call sibling sayHello func
+sibling.sayHello();
+//call aunt1 sayHello func
+aunt1.sayHello();
+//call aunt2 sayHello func
+aunt2.sayHello();
+//call aunt3 sayHello func
+aunt3.sayHello();
