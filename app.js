@@ -178,3 +178,24 @@ class Sedan extends Vehicle {
     );
   }
 }
+//assign Motorcycle class as child of Vehicle
+class Motorcycle extends Vehicle {
+  constructor(manufacturer, wheels) {
+    super(manufacturer, wheels);
+    this.noDoors = true;
+    this.handleBars = true;
+  }
+  aboutVehicle() {
+    console.log(
+      `This is a ${this.constructor.name.toLowerCase()}, it is made by ${
+        this.manufacturer
+      }, it has ${this.wheels} wheels${
+        this.noDoors ? ", it has no doors" : "."
+      }${
+        this.handleBars
+          ? ", and uses handlebars instead of a steering wheel"
+          : "."
+      }`
+    );
+  }
+}
