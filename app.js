@@ -88,3 +88,16 @@ friend3.sayHello();
 friend4.sayHello();
 //call friend5 sayHello function
 friend5.sayHello();
+//assign People as new class
+class People {
+  constructor(name, city, age) {
+    this.name = name;
+    this.city = city;
+    this.age = age;
+  }
+  sayHello() {
+    console.log(
+      `Hey! My name is ${this.name}, I am ${this.age}, and I live in ${this.city}.`
+    );
+  }
+}
