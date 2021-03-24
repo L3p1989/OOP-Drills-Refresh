@@ -135,7 +135,26 @@ class Vehicle {
   }
   aboutVehicle() {
     console.log(
-      `This is a vehicle, it is made by ${this.manufacturer}, and it has ${this.wheels} wheels.`
+      `This is a ${this.constructor.name.toLowerCase()}, it is made by ${
+        this.manufacturer
+      }, and it has ${this.wheels} wheels.`
+    );
+  }
+}
+//assign Truck as a new class that uses Vehicle as a parent class
+class Truck extends Vehicle {
+  constructor(manufacturer, wheels, doors) {
+    super(manufacturer, wheels);
+    this.doors = doors;
+    this.hasBed = true;
+  }
+  aboutVehicle() {
+    console.log(
+      `This is a ${this.constructor.name.toLowerCase()}, it is made by ${
+        this.manufacturer
+      }, that has ${this.wheels} wheels, ${this.doors} doors${
+        this.hasBed ? ", and it has a truck bed." : "."
+      }`
     );
   }
 }
