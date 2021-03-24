@@ -54,17 +54,20 @@ person4.sayHello();
 //call person5 sayHello function
 person5.sayHello();
 //assign Person as Pseudo Class with 3 constructors
-function Person(pName, city, age) {
+function Person(name, city, age) {
   //name property
-  this.name = pName;
+  this.name = name;
   //city property
   this.city = city;
   //age property
   this.age = age;
 }
 //create sayHello function for Person
-Person.prototype.sayHello = () =>
-  console.log(`Hey! My name is ${pName}, I am ${age}, and live in ${city}`);
+Person.prototype.sayHello = function () {
+  console.log(
+    `Hey! My name is ${this.name}, I am ${this.age}, and live in ${this.city}`
+  );
+};
 //assign friend1 as new Person
 const friend1 = new Person("Noreen", "Chandler", 50);
 //assign friend2 as new Person
@@ -75,3 +78,13 @@ const friend3 = new Person("Anne", "Parker", 45);
 const friend4 = new Person("Mickey", "Bailey", 48);
 //assign friend5 as new Person
 const friend5 = new Person("Laura", "Lakewood", 52);
+//call friend1 sayHello function
+friend1.sayHello();
+//call friend2 sayHello function
+friend2.sayHello();
+//call friend3 sayHello function
+friend3.sayHello();
+//call friend4 sayHello function
+friend4.sayHello();
+//call friend5 sayHello function
+friend5.sayHello();
