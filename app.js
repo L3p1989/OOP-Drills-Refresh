@@ -53,3 +53,12 @@ person3.sayHello();
 person4.sayHello();
 //call person5 sayHello function
 person5.sayHello();
+//assign Person as Pseudo Class with 3 constructors
+function Person(name, city, age) {
+  //name property
+  this.name = name;
+  //city property
+  this.city = city;
+  //age property
+  this.age = age;
+}
