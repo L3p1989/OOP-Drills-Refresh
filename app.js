@@ -43,3 +43,13 @@ let person5 = {
     console.log(`Hello! My name is ${this.name}`);
   },
 };
+//call person1 sayHello function
+person1.sayHello();
+//call person2 sayHello function
+person2.sayHello();
+//call person3 sayHello function
+person3.sayHello();
+//call person4 sayHello function
+person4.sayHello();
+//call person5 sayHello function
+person5.sayHello();
